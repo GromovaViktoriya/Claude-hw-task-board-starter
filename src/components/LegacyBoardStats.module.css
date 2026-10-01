@@ -1,0 +1,27 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+.stat {
+  min-width: 0;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: #1e3a8a;
+  background: #fff;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(23, 32, 51, 0.04);
+}
+
+@media (max-width: 639px) {
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .stat { padding: 11px 14px; }
+}

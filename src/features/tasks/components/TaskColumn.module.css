@@ -1,0 +1,18 @@
+.column {
+  min-width: 0;
+  border: 1px solid #dbe3f0;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(23, 32, 51, 0.05);
+}
+
+.column h2 {
+  margin: 0 0 14px;
+  color: #172033;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.tasks { display: grid; gap: 12px; }
