@@ -111,7 +111,7 @@ export function TaskBoard({ repository }: TaskBoardProps) {
         </button>
         </div>
       </header>
-      <LegacyBoardStats />
+      <LegacyBoardStats tasks={tasks} />
       {recovered && <p className={styles.notice} role="status">Сохранённые данные были повреждены. Мы восстановили пример.</p>}
       {operationError && <p className={styles.error} role="alert">{operationError}</p>}
       <div className={styles.board}>
